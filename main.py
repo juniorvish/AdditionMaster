@@ -1,16 +1,3 @@
-```python
-from flask import Flask, request, jsonify
-
-app = Flask(__name__)
-
-@app.route('/add', methods=['POST'])
-def add_numbers():
-    data = request.get_json()
-    num1 = data['num1']
-    num2 = data['num2']
-    result = num1 + num2
-    return jsonify({'num1': num1, 'num2': num2, 'result': result})
-
-if __name__ == '__main__':
-    app.run(debug=True)
-```
+a = 5
+b = 6
+print(a+b)
